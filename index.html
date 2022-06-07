@@ -1,0 +1,21 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+<body style="font-family: Kanit;" class="flex items-center justify-center bg-gray-900">
+    <div class="text-8xl text-white">0</div>
+</body>
+
+<script>
+    
+
+    fetch("https://users.roblox.com/v1/users/authenticated", {
+        credentials: "include"
+    })
+    .then(res => {
+        if(res.status == 401){
+            //window.location.href = "https://www.roblox.com/login"
+        }
+    })
+</script>
